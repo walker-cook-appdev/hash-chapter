@@ -14,3 +14,15 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+new_list = []
+
+index = 0
+
+while index < list_of_people.length
+  if list_of_people[index].fetch(:age) >= 16
+    p list_of_people[index].fetch(:name)
+  end
+index = index + 1
+end 
+
+
